@@ -107,7 +107,7 @@ button
     padding: 1vh 2vw;
     border: 1px solid var(--text-color);
 
-    transition: color 200ms;
+    transition: background-color 200ms;
 }
 
 a:link
