@@ -4,44 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio WIP</title>
+    <link rel="icon" href="favicon.ico?v=2" size="any">
 
     <!-- Styles -->
+    <link href="css/styles.css" rel="stylesheet">
     <link href="css/element.style.css" rel="stylesheet">
     <link href="css/color.styles.css" rel="stylesheet">
     <link href="css/util.style.css" rel="stylesheet">
     
-    <link href="css/index.style.css" rel="stylesheet">
-
-     <!-- Tailwind -->
-      <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-       <!-- jQuery -->
-       <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-       
-       <!-- Scripts -->
-       <script src="src/css-utils.js" defer></script>
-       <script src="src/nav-scroll.js" defer></script>
-       <script src="src/darkmode.js" defer></script>
+    <link href="css/pages/index.style.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
 </head>
 <body class="">
     <nav>
-        <div id="nav-content">
-            <button id="dark-mode-button" class="primary">
-                <!-- Dark Mode SVG from React Icons -->
-                <svg 
-                stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="currentColor"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="currentColor"></path>
-                </svg>
-            </button>
-            <h2>My Portfolio</h2>
-            <h3 class="secondary-text">&copy;Gustavo Rodriguez</h3>
+        <div id="nav-content" class="flex justify-between">
+            <div>
+                <button id="dark-mode-button" class="primary">
+                    <!-- Dark Mode SVG from React Icons -->
+                    <svg
+                    stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="currentColor"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="text-align-[center]">
+                <h2>My Portfolio</h2>
+            </div>
+            <div class="text-align-[right]">
+                <h3 class="secondary-text">&copy;Gustavo Rodriguez</h3>
+            </div>
         </div>
     </nav>
+
     <header>
         <h1 id="banner-title-header">Gustavo Rodriguez</h1>
-        <div class="darken-div"></div>
-        <img src="media/headerbanner.png" id="banner-header">
+        <div>
+            <div class="darken-div"></div>
+            <img src="assets/headerbanner.png" id="banner-header">
+        </div>
     </header>
+
     <main>
         <div id="main-content">
             <!--
@@ -54,8 +59,8 @@
             
             <section id="about-me">
                 <div class="flex-row gap-[4vw]">
-                    <div id="image-container">
-                        <img src="media/headshot.png" id="headshot-aboutme">
+                    <div>
+                        <img src="assets/headshot.png" id="headshot-aboutme" class="height-img">
                     </div>
                     <div class="flex flex-col justify-center">
                         <h2>Hello</h2>
@@ -67,11 +72,12 @@
             <!-- EXPERIENCE (itch.io) -->
             <section>
                 <h1>Experience</h1>
-                <div class="flex-row stretch">
-                    <div>
-                        <img src="media/unitylogo.png">
+                <div class="flex-row">
+                    <div id="exp-logos" class="width-[20vw]">
+                        <img src="assets/unitylogo.png">
+                        <img src="assets/unitylogo.png">
                     </div>
-                    <div>
+                    <div class="flex-col justify-center">
                         <p>
                             I've been using Unity for a long time.
                         </p>
@@ -80,8 +86,8 @@
             </section>
 
             <!-- PROJECTS -->
-             <section>
-                <h1>Projects</h1>
+             <section class="padding-[0px]">
+                <h1 class="padding-[0px,4vw]">Projects</h1>
                 <div id="projects"></div>
              </section>
         </div>
@@ -92,14 +98,24 @@
         </div>
     </footer>
 
-    <template>
-        <div class="flex-col">
-            <img>
-            <caption>Project Name</caption>
-            <div>
-                <p>Description</p>
+    <template id ="project-template">
+        <div class="project">
+            <img class="project-img" src="">
+            <div class="project-caption">
+                <h3 class="project-title">Project Name</h3>
+                <div>
+                    <p class="project-desc">Description</p>
+                </div>
             </div>
         </div>
     </template>
+
+    <!-- Scripts -->
+    <script src="src/css-utils.js"></script>
+    <script src="src/darkmode.js"></script>
+    <script src="src/nav-scroll.js"></script>
+
+    <!-- Page Script -->
+     <script type="module" src="src/pages/index.js"></script>
 </body>
 </html>

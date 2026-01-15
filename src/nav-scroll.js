@@ -22,12 +22,7 @@ function updateNav(nav)
 
 function IsScrollingDown()
 {
-    return window.scrollY > lastScrollY && scrollY > 150;
-}
-
-function handleScroll(nav)
-{
-    console.log(nav);
+    return window.scrollY > lastScrollY && scrollY > 50;
 }
 
 function setup()
