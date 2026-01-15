@@ -1,31 +1,42 @@
-function setupNavScroll() {
-    const nav = document.querySelector("nav");
-    if (!nav) return;
+const NAV_HIDDEN_CLASS = "nav-hidden";
 
-    let lastScrollY = window.scrollY;
-    let ticking = false;
+let lastScrollY = 0;
+let ticking = false;
 
-    function onScroll() {
-        const currentY = window.scrollY;
-        const scrollingDown = currentY > lastScrollY && currentY > 10;
-
-        if (scrollingDown) {
-            nav.classList.add("nav-hidden");
-        } else {
-            nav.classList.remove("nav-hidden");
-        }
-
-        lastScrollY = currentY;
-        ticking = false;
+/**
+ * @param {HTMLElement} nav
+ */
+function updateNav(nav)
+{
+    if (IsScrollingDown())
+    {
+        nav.classList.add(NAV_HIDDEN_CLASS);
+    }
+    else
+    {
+        nav.classList.remove(NAV_HIDDEN_CLASS);
     }
 
-    window.addEventListener("scroll", () => {
-        if (!ticking) {
-            window.requestAnimationFrame(onScroll);
-            ticking = true;
-        }
-    });
+    lastScrollY = window.scrollY;
 }
 
-setupNavScroll();
+function IsScrollingDown()
+{
+    return window.scrollY > lastScrollY && scrollY > 150;
+}
 
+function handleScroll(nav)
+{
+    console.log(nav);
+}
+
+function setup()
+{
+    const nav = document.querySelector("nav");
+    if (nav)
+    {
+        addEventListener("scroll", () => updateNav(nav));
+    }
+}
+
+setup();
