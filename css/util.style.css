@@ -21,6 +21,8 @@
     flex-direction: column;
 }
 
+
+
 .justify-center, .center
 {
     display: flex;
@@ -38,6 +40,15 @@
     display: flex;
     justify-content: space-between;
 }
+
+
+
+.bold
+{
+    font-weight: 700;
+}
+
+
 
 .overlay
 {
