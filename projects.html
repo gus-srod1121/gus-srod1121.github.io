@@ -21,10 +21,27 @@
 
 
     <main>
-        <!-- PROJECTS -->
-            <section id="projects-section" class="padding-[0px]">
-            <h1 class="padding-[0px-4vw]">Projects</h1>
-            <div id="projects"></div>
+        <!-- SEARCH & FILTER -->
+        <section id="filter-section">
+            <div class="flex-row gap-[2vw] flex-wrap align-center">
+                <input type="text" id="project-search" placeholder="Search project..." class="padding-[10px] border-radius-[5px] flex-basis-[300px]">
+                
+                <div id="category-filters" class="flex-row gap-[1vw] flex-wrap"></div>
+            </div>
+        </section>
+
+        <!-- <section id="filter-section">
+            <div class="flex-row gap-[2vw] flex-wrap align-center">
+                <input type="text" id="project-search" placeholder="Search project..." class="padding-[10px] border-radius-[5px] flex-basis-[300px]">
+                
+                <div id="category-filters" class="flex-row gap-[1vw] flex-wrap"></div>
+            </div>
+        </section> -->
+
+        <!-- RESULTS -->
+            <section id="results-section" class="padding-[0px]">
+            <h1 class="padding-[0px-4vw]">Results</h1>
+            <div id="results"></div>
             </section>
     </main>
     
@@ -45,7 +62,7 @@
     </template>
     
     <!-- Components -->
-     <script src="src/components/navbar.js"></script>
+    <script src="src/components/navbar.js"></script>
 
     <!-- Scripts -->
     <script src="src/darkmode.js"></script>
@@ -53,6 +70,6 @@
     <script src="src/css-utils.js"></script>
 
     <!-- Page Script -->
-     <script type="module" src="src/pages/projects.js"></script>
+    <script type="module" src="src/pages/projects.js"></script>
 </body>
 </html>

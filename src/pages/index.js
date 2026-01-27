@@ -23,13 +23,18 @@ function displayProjects()
 
     mainProjects.forEach(project => {
         const projectInstance = template.content.cloneNode(true);
-
+        
+        projectInstance.querySelector(".project-img").src = project.img;
         projectInstance.querySelector(".project-title").textContent = project.name;
         projectInstance.querySelector(".project-desc").textContent = project.desc;
         projectInstance.querySelector(".project-tools").textContent = project.tools.join(", ");
 
-        const img = projectInstance.querySelector(".project-img");
-        img.src = project.img;
+        if (project.url)
+        {
+            const card = projectInstance.querySelector(".project");
+            card.style.cursor = "pointer";
+            card.onclick = () => window.open(project.url, "_blank");
+        }
 
         projectContainer.appendChild(projectInstance);
     })

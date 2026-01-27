@@ -11,6 +11,8 @@
     --bg-color: none;
     --bg-secondary-color: none;
     --bg-highlight-color: none;
+
+    --primary-highlight-color: none;
     
     --button-primary-text: none;
     --button-primary-bg-color: none;
@@ -37,6 +39,8 @@ body
     --bg-color: #FFFFFF;
     --bg-secondary-color: #CCCCCC;
     --bg-highlight-color: #EEDDFF;
+
+    --primary-highlight-color: #b987ff;
     
     --button-primary-text: var(--text-color);
     --button-primary-bg-color: #DDDDFF;
@@ -63,6 +67,8 @@ body.dark-mode
     --bg-color: #222222;
     --bg-secondary-color: #555555;
     --bg-highlight-color: #443355;
+
+    --primary-highlight-color: #a000d5;
 
     --button-primary-text: var(--text-color);
     --button-primary-bg-color: #443355;

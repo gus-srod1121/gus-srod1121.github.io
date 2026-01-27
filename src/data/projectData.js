@@ -26,7 +26,7 @@ export const projects = [
         img: "./assets/project-covers/python-rpg.png",
         desc: "A terminal-based dungeon RPG written in Python featuring exploration and turn-based combat. Includes a structured game loop, combat systems, state management, and enemy encounters.",
         tools: ["Python", "Github"],
-        url: "",
+        url: "https://github.com/gus-srod1121/PythonGame-TermProject",
         categories: [
             categories.GAME,
             categories.SCHOOL,
@@ -38,7 +38,7 @@ export const projects = [
         img: "./assets/project-covers/fridgetracker.png",
         desc: "A responsive food-tracking web application for managing household inventory and expiration dates. Built with Tailwind CSS and Firebase, supporting real-time data sync and full CRUD functionality.",
         tools: ["HTML/CSS", "JavaScript", "Firestore", "Tailwind CSS", "Github"],
-        url: "https://grcubes.itch.io/berry-o-ware",
+        url: "https://dtc03-e6c5d.web.app/index.html",
         categories: [
             categories.SCHOOL,
             categories.MAIN,
@@ -62,7 +62,7 @@ export const projects = [
         img: "./assets/project-covers/dungeons.png",
         desc: "An automated tabletop RPG character sheet built with Google Sheets and Apps Script. Streamlines gameplay by calculating stats, modifiers, and derived values automatically.",
         tools: ["Google Sheets", "Apps Script"],
-        url: "https://grcubes.itch.io/berry-o-ware",
+        url: "https://docs.google.com/spreadsheets/d/1mZ9f00fa_gmT9gMcSTr40T5Cg4UpvMxCO1g-TXcKai0/edit?usp=sharing",
         categories: [
             categories.APP,
             categories.SIDE,

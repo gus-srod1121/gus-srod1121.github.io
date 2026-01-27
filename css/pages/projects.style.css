@@ -1,16 +1,47 @@
-#projects
+#results
 {
     display: flex;
     flex-direction: row;
-
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-
-    padding: 20px 5vw;
+    flex-wrap: wrap;
+    
+    padding: 20px 4vw;
     gap: 20px;
 }
 
-#projects::-webkit-scrollbar-track
+.filter-tag
 {
-    margin: 0 5vw; 
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: all var(--fast-animation-time) ease;
 }
+
+.filter-tag:hover
+{
+    border-color: var(--text-color)
+}
+
+.filter-tag:has(input:checked)
+{
+    background-color: var(--primary-highlight-color);
+}
+
+#project-search {
+    border: 2px solid var(--bg-secondary-color);
+    background: var(--bg-color);
+    color: var(--text-color);
+    outline: none;
+}
+
+#project-search:focus {
+    border-color: var(--heading-color);
+}
+
+section
+{
+    padding: 25px 4vw;
+}
+
