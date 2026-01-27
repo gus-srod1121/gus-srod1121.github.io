@@ -8,8 +8,8 @@
 
     <!-- Styles -->
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/element.style.css" rel="stylesheet">
     <link href="css/color.styles.css" rel="stylesheet">
+    <link href="css/element.style.css" rel="stylesheet">
     <link href="css/util.style.css" rel="stylesheet">
     <link href="css/debug.style.css" rel="stylesheet">
     
@@ -28,7 +28,7 @@
         <h3 id="banner-subtitle-header">Game Developer <span class="margin-[0px-2vw]">·</span> Systems-Oriented Programmer</h3>
         <div id="banner-holder">
             <div class="overlay background-[rgba(0,0,0,0.5)]"></div>
-            <img src="assets/headerbanner.png" id="banner-header">
+            <img src="assets/headerbanner.png~" id="banner-header">
         </div>
     </header>
 
@@ -43,15 +43,15 @@
             -->
 
             <!-- WIP -->
-             <section class="flex">
-                <h1 class="center">This is a work in progress. This portfolio is being updated constantly</h1>
-             </section>
-          
+            <section class="flex">
+                <h1 class="align-center font-size-[clamp(14px,2.5vw,3em)]">This is a work in progress. This portfolio is being updated constantly</h1>
+            </section>
+        
             <!-- ABOUT ME -->
             <section id="about-me">
                 <div class="flex-row gap-[4vw] padding-[0px]">
                     <div>
-                        <img src="/">
+                        <img src="/" alt=". (I'm taking a picture on wednesday)">
                         <!-- <img src="assets/headshot.png" id="headshot-aboutme" class="height-img logo"> -->
                     </div>
                     <div class="flex-col justify-center">
@@ -68,14 +68,14 @@
             </section>
 
             <!-- PROJECTS -->
-             <section id="projects-section" class="padding-[0px]">
-                <h1 class="padding-[0px-4vw]">Projects</h1>
-                <a href="projects.html" class="padding-[0px-4vw]">See all my projects --></a>
-                <div id="project-container"></div>
-             </section>
+            <section id="projects-section" class="padding-[0px]">
+            <h1 class="padding-[0px-4vw]">Projects</h1>
+            <a href="projects.html" class="padding-[0px-4vw] decorated">See all my projects --></a>
+            <div id="project-container"></div>
+            </section>
 
             <!-- MUSIC -->
-             <section id="music-section">
+            <section id="music-section">
                 <h1>Music</h1>
                 <p>I've composed all the music I've used in my games and other stuff. I'm still a beginner but I love making music.</p>
                 <p>I taught myself to play the piano and violin. Unlike riding a bike, I sometimes forget and need to reteach myself. I've studied a lot of music theory to make up for it.</p>
@@ -86,8 +86,8 @@
                 <h3>VOLUME WARNING</h3>
                 <div id="music-container" class="flex-col gap-[2vh]"></div>
 
-                <p><a href="projects.html" target="_blank" class="margin-top-[25px] bold">Here is the rest of the music.</a> Most others are incomplete, but they are still mine.</p>
-             </section>
+                <p class="margin-top-[2vh]"><a href="https://www.bandlab.com/grcubes/music-overview" target="_blank" class="bold font-size-[1.2em] decorated">Here is the rest of the music</a> with descriptions. Most others are incomplete.</p>
+            </section>
         </div>
     </main>
     <footer>
@@ -118,16 +118,16 @@
             <audio class="music-player flex-basis-[20%]" controls></audio>
         </div>
     </template>
+    
+    <!-- Components -->
+    <script src="src/components/navbar.js"></script>
 
     <!-- Scripts -->
     <script src="src/darkmode.js"></script>
     <script src="src/nav-scroll.js"></script>
     <script src="src/css-utils.js"></script>
-    
-    <!-- Components -->
-     <script src="src/components/navbar.js"></script>
 
     <!-- Page Script -->
-     <script type="module" src="src/pages/index.js"></script>
+    <script type="module" src="src/pages/index.js"></script>
 </body>
 </html>

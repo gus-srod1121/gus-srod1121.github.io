@@ -3,7 +3,7 @@ nav
     background-color: var(--bg-color);
     box-shadow: 0px 5px 5px var(--shadow-color);
 
-    width: 100%;
+    width: 100vw;
     height: 100px;
 
     position: sticky;

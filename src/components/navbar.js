@@ -12,17 +12,17 @@ function createNavbar()
                     </svg>
                 </button>
             </div>
-            <div class="text-align-[center]">
+            <div class="text-align-[center] flex-basis-[30%]">
                 <!-- INDEX -->
                 <section class="flex flex-row gap-[1vw]">
                     <a href="#about-me">
-                        <p class="secondary-text resizing-text text-hover" style="--target-font-size: 1.5vw;" href="#about-me">About me</p>
+                        <p class="secondary-text resizing-text text-hover decorated" style="--target-font-size: 1.5vw;">About me</p>
                     </a>
                     <a href="#projects-section">
-                        <p class="secondary-text resizing-text text-hover" style="--target-font-size: 1.5vw;" href="#experience">Projects</p>
+                        <p class="secondary-text resizing-text text-hover decorated" style="--target-font-size: 1.5vw;">Projects</p>
                     </a>
                     <a href="contact.html">
-                        <p class="secondary-text resizing-text text-hover" style="--target-font-size: 1.5vw;" href="#projects-section">Contact</p>
+                        <p class="secondary-text resizing-text text-hover decorated" style="--target-font-size: 1.5vw;">Contact</p>
                     </a>
                 </section>
             </div>

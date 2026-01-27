@@ -17,8 +17,9 @@ function displayProjects()
     const projectContainer = document.querySelector("#project-container");
     const template = document.querySelector("#project-template");
 
-    const mainProjects = projects.filter(project => project.categories.includes(categories.MAIN));
-    console.log(mainProjects);
+    // const mainProjects = projects.filter(project => project.categories.includes(categories.MAIN));
+    const mainProjects = projects;
+    // console.log(mainProjects);
 
     mainProjects.forEach(project => {
         const projectInstance = template.content.cloneNode(true);

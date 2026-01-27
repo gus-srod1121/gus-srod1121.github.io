@@ -7,6 +7,11 @@ function setupDarkMode() {
     if (!darkModeButton) return;
 
     darkModeButton.addEventListener("click", toggleDarkMode);
+
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches)
+    {
+        document.body.classList.add("dark-mode");
+    }
 }
 
 setupDarkMode();

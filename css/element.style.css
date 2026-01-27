@@ -1,6 +1,6 @@
 body
 {
-    width: 100vw;
+    width: 100%;
     max-width: 2560px;
     margin: auto;
 }
@@ -11,19 +11,20 @@ p
     margin: 5px;
 }
 
+
+
+h1
+{
+    font-size: 3em;
+    font-weight: 500;
+}
+
+
+
 a
 {
     text-decoration: none;
-}
-
-a:link
-{
-    color: var(--anchor-text-color);
-}
-
-a:visited
-{
-    color: var(--anchor-clicked-text-color);
+    text-decoration-color: rgba(0, 0, 0, 0);
 }
 
 
