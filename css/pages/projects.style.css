@@ -1,0 +1,16 @@
+#projects
+{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    padding: 20px 5vw;
+    gap: 20px;
+}
+
+#projects::-webkit-scrollbar-track
+{
+    margin: 0 5vw; 
+}

@@ -1,25 +1,11 @@
 import { projects, categories } from '../data/projectData.js';
 
-function calculateMainTopMargin()
-{
-    const header = document.querySelector("header");
-    const navbar = document.querySelector("nav");
-    
-    const main = document.querySelector("main");
-    const top_margin = header.offsetHeight - navbar.offsetHeight;
-    
-    main.style.marginTop = `${top_margin}px`;
-}
-
 function displayProjects()
 {
     const projectContainer = document.querySelector("#projects");
     const template = document.querySelector("#project-template");
 
-    const mainProjects = projects.filter(project => project.categories.includes(categories.MAIN));
-    console.log(mainProjects);
-
-    mainProjects.forEach(project => {
+    projects.forEach(project => {
         const projectInstance = template.content.cloneNode(true);
 
         projectInstance.querySelector(".project-title").textContent = project.name;
@@ -36,7 +22,6 @@ function displayProjects()
 
 function setup()
 {
-    calculateMainTopMargin();
     displayProjects();
 }
 

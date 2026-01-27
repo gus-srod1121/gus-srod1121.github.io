@@ -71,15 +71,16 @@
             -->
 
             <!-- WIP -->
-             <section>
-                <h1>This is a work in progress. This portolfio is being updated constantly</h1>
+             <section class="flex">
+                <h1 class="center">This is a work in progress. This portfolio is being updated constantly</h1>
              </section>
           
             <!-- ABOUT ME -->
             <section id="about-me">
                 <div class="flex-row gap-[4vw] padding-[0px]">
                     <div>
-                        <img src="assets/headshot.pn" id="headshot-aboutme" class="height-img logo">
+                        <img src="/">
+                        <!-- <img src="assets/headshot.png" id="headshot-aboutme" class="height-img logo"> -->
                     </div>
                     <div class="flex-col justify-center">
                         <p>
@@ -97,12 +98,11 @@
             <section id="experience" class="highlight">
                 <div class="flex-row gap-[4vw]">
                     <div>
-                        <div><img src="assets/unitylogo.png" class="height-img logo"></div>
+                        <div class="flex center"><img src="assets/unitylogo.png" class="height-img max-width-[15vw] center"></div> 
                     </div>
                     <div class="flex-col justify-center">
                         <p>
-                            Most of my work comes from game jams, personal projects, and school assignments, where I've developed games both solo and in small teams using Unity and C#. 
-                            I'm especially interested in systems-driven design, responsive controls, and creating tight gameplay loops supported by original visuals and music.
+                            Unity, C#, JavaScript, HTML/CSS, etc
                         </p>
                     </div>
                 </div>
@@ -111,6 +111,7 @@
             <!-- PROJECTS -->
              <section id="projects-section" class="padding-[0px]">
                 <h1 class="padding-[0px-4vw]">Projects</h1>
+                <a href="projects.html" class="padding-[0px-4vw]">See all my projects --></a>
                 <div id="projects"></div>
              </section>
         </div>
@@ -122,9 +123,9 @@
     </footer>
 
     <template id ="project-template">
-        <div class="project">
+        <div class="project hover-rise">
+            <div class="hover-overlay background-color-[rgba(140,30,180,0.2)]"></div>
             <div class="project-img-container">
-                <div class="hover-overlay-reverse !background-color-[rgba(0,0,0,0.5)]"></div>
                 <img class="project-img" src="">
             </div>
             <div class="project-caption">

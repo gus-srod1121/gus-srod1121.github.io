@@ -25,7 +25,6 @@
 {
     display: flex;
     justify-content: center;
-    font-weight:300;
 }
 
 .items-center, .center
@@ -62,12 +61,7 @@
     transition: opacity var(--animation-time) ease;
 }
 
-.hover-overlay:hover
-{
-    opacity: 1;
-}
-
-.hover-overlay:hover
+.project:hover .hover-overlay
 {
     opacity: 1;
 }
@@ -81,6 +75,18 @@
 .hover-overlay-reverse:hover
 {
     opacity: 0;
+}
+
+
+.hover-rise
+{
+    transition: 
+        transform var(--animation-time) ease;
+}
+
+.hover-rise:hover
+{
+    transform: translateY(-10px);
 }
 
 
