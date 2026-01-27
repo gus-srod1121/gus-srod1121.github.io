@@ -1,4 +1,5 @@
 import { projects, categories } from '../data/projectData.js';
+import { music } from '../data/musicData.js'
 
 function calculateMainTopMargin()
 {
@@ -13,7 +14,7 @@ function calculateMainTopMargin()
 
 function displayProjects()
 {
-    const projectContainer = document.querySelector("#projects");
+    const projectContainer = document.querySelector("#project-container");
     const template = document.querySelector("#project-template");
 
     const mainProjects = projects.filter(project => project.categories.includes(categories.MAIN));
@@ -33,11 +34,27 @@ function displayProjects()
     })
 }
 
+function displayMusic()
+{
+    const musicContainer = document.querySelector("#music-container");
+    const template = document.querySelector("#music-template");
+
+    music.forEach(song => {
+        const songInstance = template.content.cloneNode(true);
+
+        const musicPlayer = songInstance.querySelector(".music-player");
+        musicPlayer.src = song.audioFilePath;
+
+        musicContainer.appendChild(songInstance);
+    })
+}
+
 
 function setup()
 {
     calculateMainTopMargin();
     displayProjects();
+    displayMusic();
 }
 
 setup();

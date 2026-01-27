@@ -27,7 +27,7 @@ function applyCss(_class, _abstractElement)
     const cssValue = _class.substring(startIndex+1, endIndex).split("-").join(" ");
     
     _abstractElement.style.setProperty(cssProperty, cssValue, isPriority ? "important" : "");
-    console.log(`Apply ${cssProperty} of ${cssValue} to ${_abstractElement.tagName} element\nImportant: ${isPriority}`);
+    // console.log(`Apply ${cssProperty} of ${cssValue} to ${_abstractElement.tagName} element\nImportant: ${isPriority}`);
 }
 
 function setup()
