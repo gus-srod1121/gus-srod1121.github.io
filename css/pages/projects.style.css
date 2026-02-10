@@ -11,7 +11,7 @@ main
     flex-wrap: wrap;
     
     gap: 2vw;
-    padding: 20px 4vw;
+    padding: 20px 2vw;
 
     justify-content: left;
 }
@@ -93,4 +93,11 @@ main
 {
     display: flex;
     flex-direction: column;
+}
+
+
+
+.project
+{
+    width: 350px;
 }
