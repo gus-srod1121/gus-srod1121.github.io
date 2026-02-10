@@ -1,3 +1,5 @@
+const defaultDarkMode = true;
+
 function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
 }
@@ -8,11 +10,10 @@ function setup() {
 
     darkModeButton.addEventListener("click", toggleDarkMode);
 
-    // if (window.matchMedia("(prefers-color-scheme: dark)").matches)
-    // {
-    //     document.body.classList.add("dark-mode");
-    // }
+    if (defaultDarkMode)
+    {
+        document.body.classList.add("dark-mode");
+    }
 }
 
 setup();
-
