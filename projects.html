@@ -22,20 +22,21 @@
 
     <main class="flex flex-row">
         <!-- SEARCH & FILTER -->
-        <section id="filter-section" class="secondary-bg">
-            <div class="query flex">
-                <div class="search">
-                    <input type="text" id="project-search" placeholder="Search projects...">
+        <div id="filter-div" class="secondary-bg">
+            <section id="filter-section">
+                <div class="query flex">
+                    <div class="search">
+                        <input type="text" id="project-search" placeholder="Search projects...">
+                    </div>
+                    <div class="filters">
+                        <h2 class="margin-top-[20px]">Tools</h2>
+                        <div id="tool-filters"></div>
+                        <h2>Categories</h2>
+                        <div id="category-filters" class=""></div>
+                    </div>
                 </div>
-                <div class="filters">
-                    <h2 class="margin-top-[20px]">Tools</h2>
-                    <div id="tool-filters"></div>
-
-                    <h2>Categories</h2>
-                    <div id="category-filters" class=""></div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- RESULTS -->
         <section id="results-section" class="padding-[0px]">
