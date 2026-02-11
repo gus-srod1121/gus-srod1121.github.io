@@ -12,7 +12,7 @@ function createNavbar()
                     </svg>
                 </button>
             </div>
-            <div class="text-align-[center] flex-basis-[30%]">
+            <div class="text-align-[left] flex-basis-[30%]">
                 <!-- INDEX -->
                 <section class="flex flex-row gap-[1vw]">
                     <a href="index.html">
@@ -21,8 +21,11 @@ function createNavbar()
                     <a href="projects.html">
                         <p class="secondary-text resizing-text text-hover decorated" style="--target-font-size: 1.5vw;">Projects</p>
                     </a>
-                    <a href="contact.html">
-                        <p class="secondary-text resizing-text text-hover decorated" style="--target-font-size: 1.5vw;">Contact</p>
+                    <a href="https://github.com/gus-srod1121" target="_blank">
+                        <p class="secondary-text resizing-text text-hover decorated" style="--target-font-size: 1.5vw;">GitHub</p>
+                    </a>
+                    <a href="https://grcubes.itch.io" target="_blank">
+                        <p class="secondary-text resizing-text text-hover decorated" style="--target-font-size: 1.5vw;">Itch.io</p>
                     </a>
                 </section>
             </div>
