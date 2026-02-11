@@ -147,3 +147,9 @@ main
 
     max-width: 60vw;
 }
+
+footer
+{
+    background-color: var(--bg-highlight-color);
+    background: linear-gradient(180deg, var(--bg-highlight-color) 0%, var(--bg-color) 100%);
+}
