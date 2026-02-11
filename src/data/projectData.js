@@ -94,4 +94,16 @@ export const projects = [
             categories.WIP,
         ],
     },
+    {
+        name: "Multiplayer Island Game (WIP)",
+        img: "none",
+        desc: "A simple game where you mine trees and rocks to make tools and survive. The idea was kept simple in order to be able to fully focus on the multiplayer aspect.",
+        tools: ["Unity", "Unity NetCode", "C#", "Blender"],
+        categories: [
+            categories.MINI,
+            categories.GAME,
+            categories.PERSONAL,
+            categories.WIP
+        ]
+    }
 ];
