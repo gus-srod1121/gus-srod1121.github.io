@@ -11,7 +11,7 @@ export const music = [
     },
     {
         name: "YANA",
-        audioFilePath: "./assets/audio/yana.wav",
+        audioFilePath: "./assets/audio/yana_theme.wav",
         startingVolume: 50,
     },
     {
