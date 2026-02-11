@@ -6,6 +6,7 @@ export const categories = {
     MINI: "mini",
     PERSONAL: "personal",
     SCHOOL: "school",
+    WIP: "wip",
 }
 
 export const projects = [
@@ -79,6 +80,18 @@ export const projects = [
             categories.APP,
             categories.MINI,
             categories.PERSONAL,
+        ],
+    },
+    {
+        name: "Moonshine (WIP)",
+        img: "none",
+        desc: "Moonshine combines the fun grind of tycoon games with the thrilling suspense of a crime simulator. Your job is to grow your business by developing your moonshine (liquor) recipe, brewing better products, and delivering them to customers, all while staying away from the eye of the law.",
+        tools: ["Java", "libGDX"],
+        categories: [
+            categories.GAME,
+            categories.MAIN,
+            categories.SCHOOL,
+            categories.WIP,
         ],
     },
 ];
