@@ -32,7 +32,7 @@ body
     --text-color: #000000;
     --secondary-text-color: #888888;
     
-    --heading-color: #6b1fd5;
+    --heading-color: #a221ff;
     
     --text-hover-color: #111111;
     
@@ -47,8 +47,8 @@ body
     --button-primary-hover-bg-color: #AAAADD;
     --button-primary-active-bg-color: #9988DD;
     
-    --anchor-text-color: #2222DD;
-    --anchor-clicked-text-color: #7722AA;
+    --anchor-text-color: #5454ff;
+    --anchor-clicked-text-color: #b432ff;
     
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -60,7 +60,7 @@ body.dark-mode
     --text-color: #FFFFFF;
     --secondary-text-color: #888888;
     
-    --heading-color: #a000d5;
+    --heading-color: #cb83ff;
     
     --text-hover-color: #EEEEEE;
 
@@ -71,12 +71,12 @@ body.dark-mode
     --primary-highlight-color: #a000d5;
 
     --button-primary-text: var(--text-color);
-    --button-primary-bg-color: #443355;
-    --button-primary-hover-bg-color: #331144;
-    --button-primary-active-bg-color: #330033;
+    --button-primary-bg-color: #493160;
+    --button-primary-hover-bg-color: #44175b;
+    --button-primary-active-bg-color: #683068;
 
-    --anchor-text-color: #5555FF;
-    --anchor-clicked-text-color: #7722AA;
+    --anchor-text-color: #7171fe;
+    --anchor-clicked-text-color: #b054e4;
 }
 
 
